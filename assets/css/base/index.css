@@ -157,6 +157,7 @@ button {
 }
 
 button,
+input,
 a {
   outline: none;
   border: none;

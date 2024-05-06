@@ -1,0 +1,18 @@
+.heading {
+    color: #212832;
+    font-weight: 700;
+
+    &-1 {
+        font-size: 6rem;
+        line-height: 1.16;
+    }
+    &-2 {
+        font-size: 4rem;
+        line-height: 1.25;
+    }
+    &-3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.45;
+    }
+}
