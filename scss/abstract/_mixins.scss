@@ -1,0 +1,19 @@
+@use "./variables";
+
+@mixin flexCenter($a: center, $j: center) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+@mixin textStyle($c, $s: 18px, $w: 400, $lh: 1.66) {
+    color: $c;
+    font-size: $s;
+    font-weight: $w;
+    line-height: $lh;
+}
+
+@mixin btnHover($color) {
+    color: $color;
+    background: transparent;
+    border-color: $color;
+}

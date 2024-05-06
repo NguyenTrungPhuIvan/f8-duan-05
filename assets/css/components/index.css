@@ -1,3 +1,33 @@
-
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 149px;
+  height: 58px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+  transition: all 0.25s ease;
+}
+.btn-color1 {
+  border: 2px solid #7264d6;
+  background: #7264d6;
+}
+.btn-color1:hover {
+  color: #7264d6;
+  background: transparent;
+  border-color: #7264d6;
+}
+.btn-color2 {
+  border: 2px solid #212832;
+  background: #212832;
+}
+.btn-color2:hover {
+  color: #212832;
+  background: transparent;
+  border-color: #212832;
+}
 
 /*# sourceMappingURL=index.css.map */
