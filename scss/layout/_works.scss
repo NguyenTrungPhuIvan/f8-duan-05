@@ -1,6 +1,6 @@
 @use "../abstract" as ab;
 .works {
-    margin-top: 189px;
+    margin-top: 160px;
     &__title {
         margin-top: 12px;
     }
@@ -17,6 +17,9 @@
     }
     &__left {
         position: relative;
+    }
+    &__right {
+        padding-top: 29px;
     }
     .congratulations {
         @include ab.flexCenter($j: null);

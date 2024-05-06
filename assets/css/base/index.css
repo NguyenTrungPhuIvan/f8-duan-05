@@ -168,4 +168,8 @@ a {
   text-decoration: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=index.css.map */

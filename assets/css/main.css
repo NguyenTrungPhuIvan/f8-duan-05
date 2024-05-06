@@ -168,6 +168,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -219,7 +223,7 @@ a {
   position: relative;
   color: #696d76;
   margin-left: 30px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 24px; /* 171.429% */
 }
@@ -427,7 +431,7 @@ a {
   justify-content: center;
   position: absolute;
   right: 82px;
-  bottom: 83px;
+  bottom: 65px;
   gap: 11px;
   width: 124px;
   height: 68px;
@@ -454,7 +458,7 @@ a {
 }
 
 .works {
-  margin-top: 189px;
+  margin-top: 160px;
 }
 .works__title {
   margin-top: 12px;
@@ -470,6 +474,9 @@ a {
 }
 .works__left {
   position: relative;
+}
+.works__right {
+  padding-top: 29px;
 }
 .works .congratulations {
   display: flex;
@@ -607,6 +614,75 @@ a {
 }
 .feature .method-payments .payment-add {
   background: #f9ea63;
+}
+
+.testimonial {
+  margin-top: 160px;
+}
+.testimonial .testimonial__header {
+  margin: 0 auto;
+  text-align: center;
+  width: 435px;
+}
+.testimonial__title {
+  margin-top: 12px;
+}
+.testimonial__desc {
+  margin-top: 18px;
+}
+.testimonial .testimonial__author .avatar, .testimonial .testimonial__author .avatar-2 {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: #4ab5e3;
+}
+.testimonial .testimonial__author .avatar-2 {
+  background: #439f90;
+}
+.testimonial .testimonial__author .name {
+  margin-top: 20px;
+  color: #070052;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.testimonial .testimonial__author .desc {
+  margin-top: 2px;
+  color: #696d76;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.testimonial__blockquote {
+  position: relative;
+  padding: 42px 28px;
+  width: 570px;
+  background: #fff;
+  color: #696d76;
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.55; /* 154.545% */
+  border-radius: 10px;
+  filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+.testimonial__blockquote::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -82px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 42px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+.testimonial__author {
+  margin-top: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
 
 .col, .row[class*=row-cols-] > *,
