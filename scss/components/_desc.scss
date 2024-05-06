@@ -12,4 +12,24 @@
         font-weight: 600;
         line-height: 24px; /* 171.429% */
     }
+
+    &.sub-title {
+        position: relative;
+        color: #696d76;
+        margin-left: 30px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 24px; /* 171.429% */
+    }
+    &.sub-title::before {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: #696d77;
+    }
 }

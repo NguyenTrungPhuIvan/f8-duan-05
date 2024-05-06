@@ -1,0 +1,67 @@
+@use "../abstract" as ab;
+
+.feature {
+    margin-top: 160px;
+
+    &__title {
+        margin-top: 12px;
+    }
+    &__desc {
+        margin-top: 20px;
+    }
+    &__list {
+        margin-top: 28px;
+    }
+    &__btn {
+        margin-top: 38px;
+    }
+
+    &__left {
+        position: relative;
+    }
+    &__right {
+        padding-top: 50px;
+    }
+    .cash {
+        @include ab.flexCenter;
+        position: absolute;
+        z-index: 2;
+        right: -12px;
+        bottom: 235px;
+        width: 90px;
+        height: 90px;
+        background: #000;
+        border-radius: 50%;
+        background: ab.$primary-color;
+    }
+    .method {
+        position: absolute;
+        right: 0;
+        bottom: 57px;
+        width: 281px;
+        height: 220px;
+        background: #fff;
+        filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+
+        padding: 28px;
+        color: ab.$text-secondary-color;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .method-payments {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        .payment-card {
+            width: 63px;
+            height: 48px;
+            @include ab.flexCenter;
+            background: #f2f2fa;
+        }
+        .payment-add {
+            @extend .payment-card;
+            background: #f9ea63;
+        }
+    }
+}

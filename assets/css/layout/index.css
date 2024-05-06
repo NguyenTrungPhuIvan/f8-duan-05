@@ -172,4 +172,160 @@
   font-weight: 400;
 }
 
+.works {
+  margin-top: 189px;
+}
+.works__title {
+  margin-top: 12px;
+}
+.works__list {
+  display: flex;
+  flex-flow: column;
+  row-gap: 30px;
+  margin-top: 70px;
+}
+.works__item-desc {
+  margin-top: 16px;
+}
+.works__left {
+  position: relative;
+}
+.works .congratulations {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 96px;
+  right: -126px;
+  column-gap: 10px;
+  font-family: "Inter", sans-serif;
+  padding: 15px;
+  width: 226px;
+  height: 70px;
+  border-radius: 8px;
+  background: #fffdfa;
+  box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+.works .congratulations-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 5px;
+  flex-flow: column;
+}
+.works .congratulations-text {
+  color: #212832;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.works .congratulations-activated {
+  color: #696d76;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.works .icon-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 55px;
+  top: 76px;
+}
+
+.payments {
+  margin-top: 160px;
+}
+.payments__title {
+  margin-top: 12px;
+}
+.payments__desc {
+  margin-top: 20px;
+}
+.payments__list {
+  margin-top: 28px;
+}
+.payments__btn {
+  margin-top: 38px;
+}
+.payments__right {
+  padding-top: 86px;
+  position: relative;
+}
+.payments__send-money {
+  position: absolute;
+  right: -48px;
+  top: 0px;
+}
+.payments__income {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature {
+  margin-top: 160px;
+}
+.feature__title {
+  margin-top: 12px;
+}
+.feature__desc {
+  margin-top: 20px;
+}
+.feature__list {
+  margin-top: 28px;
+}
+.feature__btn {
+  margin-top: 38px;
+}
+.feature__left {
+  position: relative;
+}
+.feature__right {
+  padding-top: 50px;
+}
+.feature .cash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  right: -12px;
+  bottom: 235px;
+  width: 90px;
+  height: 90px;
+  background: #000;
+  border-radius: 50%;
+  background: #7264d6;
+}
+.feature .method {
+  position: absolute;
+  right: 0;
+  bottom: 57px;
+  width: 281px;
+  height: 220px;
+  background: #fff;
+  filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
+  padding: 28px;
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.feature .method-payments {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.feature .method-payments .payment-card, .feature .method-payments .payment-add {
+  width: 63px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2fa;
+}
+.feature .method-payments .payment-add {
+  background: #f9ea63;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,58 @@
+@use "../abstract" as ab;
+.works {
+    margin-top: 189px;
+    &__title {
+        margin-top: 12px;
+    }
+    &__list {
+        display: flex;
+        flex-flow: column;
+        row-gap: 30px;
+        margin-top: 70px;
+    }
+    &__item {
+        &-desc {
+            margin-top: 16px;
+        }
+    }
+    &__left {
+        position: relative;
+    }
+    .congratulations {
+        @include ab.flexCenter($j: null);
+        position: absolute;
+        bottom: 96px;
+        right: -126px;
+        column-gap: 10px;
+        font-family: "Inter", sans-serif;
+        padding: 15px;
+        width: 226px;
+        height: 70px;
+        border-radius: 8px;
+        background: #fffdfa;
+        box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+
+        &-content {
+            @include ab.flexCenter($a: flex-start);
+            row-gap: 5px;
+            flex-flow: column;
+        }
+        &-text {
+            color: #212832;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        &-activated {
+            color: #696d76;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+
+    .icon-img {
+        @include ab.flexCenter;
+        position: absolute;
+        right: 55px;
+        top: 76px;
+    }
+}
