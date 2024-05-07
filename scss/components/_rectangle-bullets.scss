@@ -1,0 +1,18 @@
+@use "../abstract" as ab;
+.rectangle-bullets {
+    @include ab.flexCenter;
+    column-gap: 12px;
+    margin: 0 auto;
+
+    .rectangle {
+        width: 22px;
+        height: 6px;
+        border: 1px solid #9b9fab;
+        border-radius: 1px;
+
+        &:first-child {
+            background: #7264d6;
+            border-color: #7264d6;
+        }
+    }
+}

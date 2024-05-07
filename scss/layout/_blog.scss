@@ -1,0 +1,62 @@
+@use "../abstract" as ab;
+.blog {
+    margin-top: 160px;
+    &__header {
+        @include ab.flexCenter($j: space-between);
+
+        &-left {
+            width: 435px;
+        }
+    }
+    &__title {
+        margin-top: 6px;
+    }
+    &__desc {
+        margin-top: 18px;
+    }
+    &__list {
+        margin-top: 70px;
+    }
+    &__btn {
+        width: 123px;
+        height: 58px;
+    }
+    &__item {
+        display: flex;
+        column-gap: 22px;
+        width: 100%;
+        padding: 28px;
+        border-radius: 12px;
+        border: 1px solid #dfe2e8;
+        background: #fff;
+        transition: all 0.25s ease;
+
+        &-thumb {
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+        }
+        &-date {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        &-title {
+            margin-top: 10px;
+            font-size: 1.8rem;
+            line-height: 1.66;
+        }
+
+        &:hover {
+            border-color: #fff;
+            box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+            .blog__item-link {
+                color: #7264d6;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+}
