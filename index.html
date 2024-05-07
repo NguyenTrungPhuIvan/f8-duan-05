@@ -93,6 +93,11 @@
 
         <!-- css -->
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="header">
@@ -167,10 +172,17 @@
                         <div class="col-lg-5 offset-lg-1">
                             <div class="hero__right">
                                 <img
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
                                     src="./assets/img/Mobile Screen.png"
                                     alt="Digital Payment For Everyone."
                                 />
-                                <div class="hero__card-deposite">
+                                <div
+                                    class="hero__card-deposite"
+                                    data-aos="fade-up-right"
+                                    data-aos-duration="1000"
+                                >
+                                    >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="20"
@@ -194,11 +206,21 @@
                                     <span class="deposite"> Deposite </span>
                                     <span class="price">$32000</span>
                                 </div>
-                                <div class="hero__card-interest">
+                                <div
+                                    class="hero__card-interest"
+                                    data-aos="fade-down-left"
+                                    data-aos-duration="1000"
+                                >
+                                    >
                                     <span class="per"> 0% </span>
                                     <span class="interest"> Interest </span>
                                 </div>
-                                <div class="hero__card-secured">
+                                <div
+                                    class="hero__card-secured"
+                                    data-aos="fade-up-left"
+                                    data-aos-duration="1000"
+                                >
+                                    >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="20"
@@ -233,10 +255,18 @@
                         <div class="col-lg-5">
                             <div class="works__left">
                                 <img
+                                    data-aos="fade-right"
+                                    data-aos-duration="500"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     src="./assets/img/works-img.png"
                                     alt="Digital Smart Wallet"
                                 />
-                                <div class="congratulations">
+                                <div
+                                    class="congratulations"
+                                    data-aos="fade-up-left"
+                                    data-aos-duration="800"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                >
                                     <img
                                         src="./assets/img/checked-radius.png"
                                         alt=""
@@ -250,7 +280,12 @@
                                         >
                                     </div>
                                 </div>
-                                <div class="icon-img">
+                                <div
+                                    class="icon-img"
+                                    data-aos="fade-down-left"
+                                    data-aos-duration="800"
+                                    data-aos-anchor-placement="center-center"
+                                >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="64"
@@ -299,14 +334,28 @@
                         <div class="col-lg-5 offset-lg-2">
                             <div class="works__right">
                                 <span
+                                    data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     class="works__sub-title desc desc-16 sub-title"
                                     >Digital Smart Wallet</span
                                 >
-                                <h2 class="works__title heading heading-2">
+                                <h2
+                                    class="works__title heading heading-2"
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                >
                                     How It Works
                                 </h2>
                                 <ul class="works__list">
-                                    <li class="works__item">
+                                    <li
+                                        class="works__item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="800"
+                                        data-aos-delay="300"
+                                        data-aos-anchor-placement="bottom-bottom"
+                                    >
                                         <h3
                                             class="works__item-title heading heading-3"
                                         >
@@ -321,7 +370,13 @@
                                             minutes or less!
                                         </p>
                                     </li>
-                                    <li class="works__item">
+                                    <li
+                                        class="works__item"
+                                        class="works__item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="800"
+                                        data-aos-delay="400"
+                                    >
                                         <h3
                                             class="works__item-title heading heading-3"
                                         >
@@ -337,7 +392,13 @@
                                             order to accue APYI
                                         </p>
                                     </li>
-                                    <li class="works__item">
+                                    <li
+                                        class="works__item"
+                                        class="works__item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="800"
+                                        data-aos-delay="500"
+                                    >
                                         <h3
                                             class="works__item-title heading heading-3"
                                         >
@@ -362,19 +423,38 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="payments__left">
-                                <span class="payments__sub-title desc sub-title"
+                                <span
+                                    data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="payments__sub-title desc sub-title"
                                     >Digital Smart Wallet</span
                                 >
-                                <h2 class="payments__title heading heading-2">
+                                <h2
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="payments__title heading heading-2"
+                                >
                                     One Card For All Your Payments
                                 </h2>
-                                <p class="payments__desc desc">
+                                <p
+                                    class="payments__desc desc"
+                                    data-aos="fade-up"
+                                    data-aos-duration="800"
+                                    data-aos-delay="300"
+                                >
                                     We bring together eveything that’s required
                                     to build websites and apps that accept
                                     payments and send payouts globally. We are
                                     the best platform.
                                 </p>
-                                <ul class="payments__list list-circle">
+                                <ul
+                                    class="payments__list list-circle"
+                                    data-aos="fade-up"
+                                    data-aos-duration="800"
+                                    data-aos-delay="400"
+                                >
                                     <li class="item-circle payments__item">
                                         <span>Global Payments</span>
                                     </li>
@@ -385,7 +465,12 @@
                                         <span> Friendly Price </span>
                                     </li>
                                 </ul>
-                                <button class="btn btn-color2 payments__btn">
+                                <button
+                                    class="btn btn-color2 payments__btn"
+                                    data-aos="fade-up"
+                                    data-aos-duration="700"
+                                    data-aos-delay="300"
+                                >
                                     Get Started
                                 </button>
                             </div>
@@ -393,15 +478,24 @@
                         <div class="col-lg-6 offset-lg-1">
                             <div class="payments__right">
                                 <img
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     src="./assets/img/Card.png"
                                     alt="One Card For All Your Payments"
                                 />
                                 <img
+                                    data-aos="fade-down-left"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     class="payments__send-money"
                                     src="./assets/img/send-money.png"
                                     alt=""
                                 />
                                 <img
+                                    data-aos="fade-up-left"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     class="payments__income"
                                     src="./assets/img/income.png"
                                     alt=""
@@ -417,13 +511,28 @@
                         <div class="col-lg-6">
                             <div class="feature__left">
                                 <img
+                                    data-aos="fade-right"
+                                    data-aos-duration="500"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     src="./assets/img/feature-img.png"
                                     alt="Transfer and Deposite Your Money Anytime"
                                 />
-                                <div class="cash">
+                                <div
+                                    class="cash"
+                                    data-aos="fade-down-left"
+                                    data-aos-duration="500"
+                                    data-aos-anchor-placement="center-center"
+                                    data-aos-delay="300"
+                                >
                                     <img src="./assets/img/cash.png" alt="" />
                                 </div>
-                                <div class="method">
+                                <div
+                                    class="method"
+                                    data-aos="fade-up-left"
+                                    data-aos-duration="700"
+                                    data-aos-anchor-placement="center-center"
+                                    data-aos-delay="400"
+                                >
                                     <span>Choose payment method:</span>
                                     <div class="method-payments">
                                         <div class="payment-card">
@@ -469,19 +578,37 @@
                         <div class="col-lg-5 offset-lg-1">
                             <div class="feature__right">
                                 <span
+                                    data-aos="fade-up"
+                                    data-aos-duration="1200"
+                                    data-aos-anchor-placement="bottom-bottom"
                                     class="feature__sub-title sub-title desc desc"
                                     >Digital Smart Wallet</span
                                 >
-                                <h2 class="feature__title heading heading-2">
+                                <h2
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                    class="feature__title heading heading-2"
+                                >
                                     Transfer and Deposite Your Money Anytime
                                 </h2>
-                                <p class="feature__desc desc">
+                                <p
+                                    class="feature__desc desc"
+                                    data-aos="fade-up"
+                                    data-aos-duration="600"
+                                    data-aos-delay="300"
+                                >
                                     We bring together eveything that’s required
                                     to build websites and apps that accept
                                     payments and send payouts globally. We are
                                     the best platform.
                                 </p>
-                                <ul class="list-circle feature__list">
+                                <ul
+                                    class="list-circle feature__list"
+                                    data-aos="fade-up"
+                                    data-aos-duration="600"
+                                    data-aos-delay="400"
+                                >
                                     <li class="item-circle feature__item">
                                         Powerfull App
                                     </li>
@@ -492,7 +619,13 @@
                                         Multiple Use Capabilities
                                     </li>
                                 </ul>
-                                <button class="btn btn-color2 feature__btn">
+                                <button
+                                    class="btn btn-color2 feature__btn"
+                                    data-aos="fade-up"
+                                    data-aos-duration="500"
+                                    data-aos-delay="300"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                >
                                     Get Started
                                 </button>
                             </div>
@@ -503,13 +636,30 @@
             <section class="testimonial">
                 <div class="container">
                     <div class="testimonial__header">
-                        <span class="testimonial__sub-title sub-title desc"
+                        <span
+                            class="testimonial__sub-title sub-title desc"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                            data-aos-delay="500"
+                            data-aos-anchor-placement="center-bottom"
                             >Our Testimonial</span
                         >
-                        <h2 class="heading heading-2 testimonial__title">
+                        <h2
+                            class="heading heading-2 testimonial__title"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             What Clients Says
                         </h2>
-                        <p class="testimonial__desc desc desc-16">
+                        <p
+                            class="testimonial__desc desc desc-16"
+                            data-aos="fade-up"
+                            data-aos-delay="700"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             Read what clients says about us and about our online
                             banking services that may inspire you
                         </p>
@@ -517,14 +667,24 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="testimonial__left">
-                                <blockquote class="testimonial__blockquote">
+                                <blockquote
+                                    class="testimonial__blockquote"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="center-center"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
                                     never been so much easier before. I am very
                                     much happy about this great online bank.
                                 </blockquote>
-                                <div class="testimonial__author">
+                                <div
+                                    class="testimonial__author"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                >
                                     <img
                                         class="avatar"
                                         src="./assets/img/avatar.png"
@@ -537,14 +697,26 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="testimonial__right">
-                                <blockquote class="testimonial__blockquote">
+                                <blockquote
+                                    class="testimonial__blockquote"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="500"
+                                    data-aos-anchor-placement="center-center"
+                                >
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
                                     Payments, loans, and money transfers have
                                     never been so much easier before. I am very
                                     much happy about this great online bank.
                                 </blockquote>
-                                <div class="testimonial__author">
+                                <div
+                                    class="testimonial__author"
+                                    data-aos="fade-up"
+                                    data-aos-duration="1000"
+                                    data-aos-delay="500"
+                                    data-aos-anchor-placement="bottom-bottom"
+                                >
                                     <img
                                         class="avatar-2"
                                         src="./assets/img/avatar-2.png"
@@ -569,19 +741,42 @@
                 <div class="container">
                     <div class="blog__header">
                         <div class="blog__header-left">
-                            <span class="blog__sub-title sub-title desc"
+                            <span
+                                class="blog__sub-title sub-title desc"
+                                data-aos="fade-right"
+                                data-aos-delay="700"
+                                data-aos-duration="1000"
+                                data-aos-anchor-placement="center-bottom"
                                 >Our Blog</span
                             >
-                            <h2 class="blog__title heading heading-2">
+                            <h2
+                                class="blog__title heading heading-2"
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                data-aos-anchor-placement="center-bottom"
+                            >
                                 Get The Updates
                             </h2>
-                            <p class="desc blog__desc desc-16">
+                            <p
+                                class="desc blog__desc desc-16"
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                data-aos-duration="1000"
+                                data-aos-anchor-placement="center-bottom"
+                            >
                                 Read our blog for the regular updates about us
                                 and about our online banking services that may
                                 inspire you
                             </p>
                         </div>
-                        <button class="btn blog__btn btn-color2">
+                        <button
+                            class="btn blog__btn btn-color2"
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
+                        >
                             Read All
                         </button>
                     </div>
@@ -602,12 +797,17 @@
                                             class="blog__item-date desc desc-14"
                                             >July 03, 2022</span
                                         >
-                                        <h3
+                                        <a
+                                            href="#!"
                                             class="blog__item-title heading heading-3"
+                                            ><h3>
+                                                Online bank is the best and
+                                                secure way to save in the
+                                                future. Lorem ipsum dolor sit
+                                                amet consectetur adipisicing
+                                                elit. Architecto, expedita.
+                                            </h3></a
                                         >
-                                            Online bank is the best and secure
-                                            way to save in the future...
-                                        </h3>
                                         <a
                                             href="#!"
                                             class="blog__item-link desc desc-16"
@@ -631,12 +831,17 @@
                                             class="blog__item-date desc desc-14"
                                             >July 03, 2022</span
                                         >
-                                        <h3
+                                        <a
+                                            href="#!"
                                             class="blog__item-title heading heading-3"
+                                            ><h3>
+                                                Why do you need to open a bank
+                                                account in online. Lorem ipsum
+                                                dolor sit, amet consectetur
+                                                adipisicing elit. Fugiat,
+                                                commodi!
+                                            </h3></a
                                         >
-                                            Why do you need to open a bank
-                                            account in online..
-                                        </h3>
                                         <a
                                             href="#!"
                                             class="blog__item-link desc desc-16"
@@ -660,12 +865,16 @@
                                             class="blog__item-date desc desc-14"
                                             >July 03, 2022</span
                                         >
-                                        <h3
+                                        <a
+                                            href="#!"
                                             class="blog__item-title heading heading-3"
+                                            ><h3>
+                                                The benefits that we get from
+                                                credit card at anytime. Lorem
+                                                ipsum dolor sit amet consectetur
+                                                adipisicing elit. Eius, iusto.
+                                            </h3></a
                                         >
-                                            The benefits that we get from credit
-                                            card at anytime...
-                                        </h3>
                                         <a
                                             href="#!"
                                             class="blog__item-link desc desc-16"
@@ -689,12 +898,17 @@
                                             class="blog__item-date desc desc-14"
                                             >July 03, 2022</span
                                         >
-                                        <h3
+                                        <a
+                                            href="#!"
                                             class="blog__item-title heading heading-3"
+                                            ><h3>
+                                                How to manage your money in
+                                                online in this busy days. Lorem
+                                                ipsum dolor sit, amet
+                                                consectetur adipisicing elit.
+                                                Vitae, possimus.
+                                            </h3></a
                                         >
-                                            How to manage your money in online
-                                            in this busy days...
-                                        </h3>
                                         <a
                                             href="#!"
                                             class="blog__item-link desc desc-16"
@@ -765,21 +979,37 @@
                             </button>
                         </div>
                         <img
+                            data-aos="zoom-in-right"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
                             class="download__star"
                             src="./assets/img/Star 20.png"
                             alt=""
                         />
                         <img
+                            data-aos="zoom-in-right"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
                             class="download__star"
                             src="./assets/img/Star 20.png"
                             alt=""
                         />
                         <img
+                            data-aos="zoom-in-left"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
                             class="download__star"
                             src="./assets/img/Star 20.png"
                             alt=""
                         />
                         <img
+                            data-aos="zoom-in-left"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-anchor-placement="center-bottom"
                             class="download__star"
                             src="./assets/img/Star 20.png"
                             alt=""
@@ -855,11 +1085,15 @@
                     </ul>
                 </div>
             </div>
+            <div class="footer__copy">
+                <span class="footer__copy-content"
+                    >© 2020 Ligft Media All rights reserved.</span
+                >
+            </div>
         </footer>
-        <div class="footer__copy">
-            <span class="footer__copy-content"
-                >© 2020 Ligft Media All rights reserved.</span
-            >
-        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

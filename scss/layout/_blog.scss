@@ -39,8 +39,10 @@
         &-date {
             display: inline-block;
             margin-top: 10px;
+            font-weight: 400;
         }
         &-title {
+            @include ab.lineClamp;
             margin-top: 10px;
             font-size: 1.8rem;
             line-height: 1.66;

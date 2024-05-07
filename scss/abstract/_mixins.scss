@@ -17,3 +17,9 @@
     background: transparent;
     border-color: $color;
 }
+@mixin lineClamp($lc: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lc;
+    overflow: hidden;
+}
