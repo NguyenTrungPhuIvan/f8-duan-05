@@ -1,6 +1,14 @@
+@use "../abstract" as ab;
+
 @forward "./button";
 @forward "./forms";
 @forward "./desc";
 @forward "./heading";
 @forward "./list";
 @forward "./rectangle-bullets";
+
+.oder-2 {
+    @include ab.responsive("tm") {
+        order: 2;
+    }
+}

@@ -5,6 +5,11 @@
 
     &__row {
         @include ab.flexCenter($j: space-between);
+        @include ab.responsive("tm") {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            row-gap: 50px;
+        }
     }
     &__logo {
         align-self: flex-start;
@@ -31,6 +36,9 @@
             opacity: 0.75;
             margin-top: 24px;
             width: 371px;
+            @include ab.responsive("tm") {
+                width: auto;
+            }
         }
         &-titel {
             margin-bottom: 24px;

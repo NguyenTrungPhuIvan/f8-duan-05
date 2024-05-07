@@ -1,16 +1,28 @@
+@use "../abstract" as ab;
 .desc {
     color: #696d76;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 30px; /* 166.667% */
+
+    @include ab.responsive("tm") {
+        font-size: 1.6rem;
+    }
+
     &-16 {
         font-size: 1.6rem;
         line-height: 1.75;
+        @include ab.responsive("tm") {
+            font-size: 1.4rem;
+        }
     }
     &-14 {
         font-size: 1.4rem;
         font-weight: 600;
         line-height: 24px; /* 171.429% */
+        @include ab.responsive("tm") {
+            font-size: 1.2rem;
+        }
     }
 
     &.sub-title {
@@ -20,6 +32,9 @@
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 24px; /* 171.429% */
+        @include ab.responsive("tm") {
+            font-size: 1.4rem;
+        }
     }
     &.sub-title::before {
         position: absolute;

@@ -3,6 +3,10 @@
     margin-top: 76px;
     &__left {
         padding: 57px 30px 57px 0;
+        @include ab.responsive("tm") {
+            padding-right: 0;
+            text-align: center;
+        }
     }
     &__title {
         margin-top: 12px;
@@ -12,12 +16,20 @@
     }
     &__desc {
         margin-top: 20px;
+        @include ab.responsive("tm") {
+            // display: none;
+        }
     }
     &__form {
         margin-top: 48px;
     }
     &__form {
         position: relative;
+
+        @include ab.responsive("tm") {
+            @include ab.flexCenter();
+        }
+
         input {
             width: 540px;
             height: 74px;
@@ -29,11 +41,21 @@
             font-size: 1.6rem;
             font-weight: 400;
             line-height: 1.75; /* 175% */
+
+            @include ab.responsive("tm") {
+                width: 380px;
+                height: 60px;
+                font-size: 1.4rem;
+            }
         }
         .btn {
             position: absolute;
-            right: 8px;
+            right: -10px;
             top: 8px;
+            @include ab.responsive("tm") {
+                position: relative;
+                inset: 0;
+            }
         }
     }
     &__note {
@@ -44,6 +66,9 @@
 
     &__right {
         position: relative;
+        @include ab.responsive("tm") {
+            @include ab.flexCenter();
+        }
     }
     .hero__card-deposite {
         @include ab.flexCenter($j: null);
@@ -55,7 +80,9 @@
         height: 46px;
         border-radius: 6px;
         box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
-
+        @include ab.responsive("tm") {
+            left: 0;
+        }
         font-size: 1.4rem;
         .deposite {
             margin-left: 8px;
@@ -78,7 +105,9 @@
         height: 130px;
         background: #da6464;
         border-radius: 50%;
-
+        @include ab.responsive("tm") {
+            right: 0;
+        }
         color: #fff;
         .per {
             font-size: 4.4rem;
@@ -103,7 +132,9 @@
         color: #fff;
         font-family: "Open Sans";
         font-style: normal;
-
+        @include ab.responsive("tm") {
+            right: 0;
+        }
         .secured-fund {
             @include ab.flexCenter($a: flex-start);
             gap: 5px;

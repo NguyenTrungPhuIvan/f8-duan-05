@@ -9,6 +9,9 @@
         flex-flow: column;
         row-gap: 30px;
         margin-top: 70px;
+        @include ab.responsive("tm") {
+            text-align: left;
+        }
     }
     &__item {
         &-desc {
@@ -18,8 +21,13 @@
     &__left {
         position: relative;
     }
+
     &__right {
         padding-top: 29px;
+    }
+
+    @include ab.responsive("tm") {
+        text-align: center;
     }
     .congratulations {
         @include ab.flexCenter($j: null);
@@ -34,7 +42,9 @@
         border-radius: 8px;
         background: #fffdfa;
         box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
-
+        @include ab.responsive("tm") {
+            right: 10%;
+        }
         &-content {
             @include ab.flexCenter($a: flex-start);
             row-gap: 5px;
@@ -57,5 +67,8 @@
         position: absolute;
         right: 55px;
         top: 76px;
+        @include ab.responsive("tm") {
+            right: 25%;
+        }
     }
 }

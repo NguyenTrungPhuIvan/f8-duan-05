@@ -24,11 +24,17 @@
         position: absolute;
         right: -48px;
         top: 12px;
+        @include ab.responsive("tm") {
+            right: 15%;
+        }
     }
     &__income {
         position: absolute;
         right: -12px;
         bottom: -55px;
         box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+        @include ab.responsive("tm") {
+            right: 25%;
+        }
     }
 }

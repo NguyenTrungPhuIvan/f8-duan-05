@@ -32,6 +32,10 @@
         padding: 100px 368px;
         border-radius: 24px;
         background: #7264d6;
+
+        @include ab.responsive("tm") {
+            padding: 30px;
+        }
     }
 
     &__control {
@@ -72,6 +76,9 @@
     &__star {
         position: absolute;
 
+        @include ab.responsive("tm") {
+            z-index: -1;
+        }
         &:nth-of-type(1) {
             top: 49px;
             left: 112px;

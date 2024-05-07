@@ -13,6 +13,11 @@
     line-height: 1.75; /* 175% */
 
     transition: all 0.25s ease;
+
+    @include ab.responsive("tm") {
+        width: 120px;
+        font-size: 1.4rem;
+    }
     &-color1 {
         border: 2px solid ab.$primary-color;
         background: ab.$primary-color;

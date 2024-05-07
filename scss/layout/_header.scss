@@ -4,8 +4,19 @@
 
     &__row {
         @include ab.flexCenter($j: null);
+        @include ab.responsive("tm") {
+            position: relative;
+        }
     }
 
+    &__icon {
+        @include ab.responsive("tm") {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+        }
+    }
     .nav {
         &__list {
             @include ab.flexCenter($j: null);
@@ -37,6 +48,9 @@
                     background: #7264d6;
                 }
             }
+        }
+        @include ab.responsive("tm") {
+            display: none;
         }
     }
 

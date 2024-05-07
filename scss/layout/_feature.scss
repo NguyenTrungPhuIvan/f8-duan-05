@@ -33,6 +33,9 @@
         background: #000;
         border-radius: 50%;
         background: ab.$primary-color;
+        @include ab.responsive("tm") {
+            right: 10%;
+        }
     }
     .method {
         position: absolute;
@@ -47,6 +50,9 @@
         color: ab.$text-secondary-color;
         font-size: 1.8rem;
         font-weight: 600;
+        @include ab.responsive("tm") {
+            right: 10%;
+        }
     }
     .method-payments {
         margin-top: 20px;
