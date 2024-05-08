@@ -103,6 +103,31 @@
         <header class="header">
             <div class="container">
                 <div class="header__row">
+                    <input id="bars" type="checkbox" />
+                    <label for="bars"
+                        ><svg
+                            class="header__bars"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            fill="CurrentColor"
+                        >
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                    <label for="bars" class="header__opacity"></label>
+                    <div class="tm-bg-bars">
+                        <a href="#!" class="tm-logo">
+                            <img src="./assets/img/Logo.png" alt="CeloBank" />
+                        </a>
+                        <ul class="tm-nav"></ul>
+                        <ul class="m-control">
+                            <li class="item">Log in</li>
+                            <li class="item">Sign up</li>
+                        </ul>
+                    </div>
                     <div class="header__icon">
                         <a href="#!">
                             <img src="./assets/img/Logo.png" alt="CeloBank"
@@ -1100,6 +1125,17 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+            const bars = document.querySelector("#bars");
+            const opacity = document.querySelector(".header__opacity");
+            const desktopNav = document.querySelector(".nav__list");
+            const tmNav = document.querySelector(".tm-nav");
+
+            const run = (() => {
+                synNav();
+            })();
+            function synNav() {
+                tmNav.innerHTML = desktopNav.innerHTML;
+            }
         </script>
     </body>
 </html>
