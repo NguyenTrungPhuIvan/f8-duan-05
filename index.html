@@ -179,12 +179,21 @@
                                     payments and send payouts globally. We are
                                     the best platform.
                                 </p>
-                                <form action="" class="hero__form">
+                                <form
+                                    action=""
+                                    class="hero__form"
+                                    id="hero__form"
+                                >
                                     <input
-                                        type="text"
+                                        id="hero__input"
+                                        type="email"
                                         placeholder="Your email address"
                                     />
-                                    <button class="btn btn-color1">
+                                    <button
+                                        type="submit"
+                                        form="hero__form"
+                                        class="btn btn-color1"
+                                    >
                                         Get Start
                                     </button>
                                 </form>
@@ -1076,14 +1085,24 @@
                             B22, Charlottesville, CA 45565
                         </p>
                         <h3 class="footer__infor-titel">News letter</h3>
-                        <div class="footer__infor-form">
+                        <form
+                            class="footer__infor-form"
+                            id="footer__infor-form"
+                        >
                             <input
+                                id="footer__infor-input"
                                 class="desc desc-16"
                                 type="email"
                                 placeholder="Email address..."
                             />
-                            <button class="btn btn-color1">Subscribe</button>
-                        </div>
+                            <button
+                                form="footer__infor-form"
+                                type="submit"
+                                class="btn btn-color1"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="footer__row">
@@ -1118,9 +1137,29 @@
             const desktopNav = document.querySelector(".nav__list");
             const tmNav = document.querySelector(".tm-nav");
 
+            const formHero = document.querySelector(".hero__form");
+            const formFooter = document.querySelector(".footer__infor-form");
+
+            const inputHero = document.querySelector("#hero__input");
+            const inputFooter = document.querySelector("#footer__infor-input");
+
             const run = (() => {
                 synNav();
+                checkEmptyForm(formHero, inputHero);
+                checkEmptyForm(formFooter, inputFooter);
             })();
+
+            function checkEmptyForm(form, input) {
+                form.addEventListener("submit", function (event) {
+                    var inputValue = input.value;
+
+                    if (inputValue.trim() === "") {
+                        event.preventDefault();
+                        alert("Please fill in the input field.");
+                    }
+                });
+            }
+
             function synNav() {
                 tmNav.innerHTML = desktopNav.innerHTML;
             }
