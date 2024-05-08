@@ -850,6 +850,7 @@
   font-weight: 600;
 }
 .download__control button:hover {
+  cursor: pointer;
   color: #fff;
   background: #7264d6;
   outline: 1px solid #fff;
