@@ -191,6 +191,12 @@ img {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 767.98px) {
+  .btn {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
 .btn-color1 {
   border: 2px solid #7264d6;
   background: #7264d6;
@@ -401,11 +407,21 @@ img {
   font-weight: 600;
   line-height: 1.75;
 }
+@media (max-width: 767.98px) {
+  .header__control a {
+    display: none;
+  }
+}
 .header__control .btn {
   margin-left: 28px;
   width: 113px;
   height: 52px;
   border-radius: 6px;
+}
+@media (max-width: 767.98px) {
+  .header__control .btn {
+    display: none;
+  }
 }
 
 .hero {
@@ -440,6 +456,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 20px;
+    flex-flow: column;
   }
 }
 .hero__form input {
@@ -505,6 +530,11 @@ img {
     left: 0;
   }
 }
+@media (max-width: 767.98px) {
+  .hero .hero__card-deposite {
+    display: none;
+  }
+}
 .hero .hero__card-deposite .deposite {
   margin-left: 8px;
   color: #31456a;
@@ -534,6 +564,11 @@ img {
     right: 0;
   }
 }
+@media (max-width: 767.98px) {
+  .hero .hero__card-interest {
+    display: none;
+  }
+}
 .hero .hero__card-interest .per {
   font-size: 4.4rem;
   font-weight: 600;
@@ -561,6 +596,11 @@ img {
 @media (max-width: 991.98px) {
   .hero .hero__card-secured {
     right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero .hero__card-secured {
+    display: none;
   }
 }
 .hero .hero__card-secured .secured-fund {
@@ -602,6 +642,11 @@ img {
 .works__left {
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .works__left img {
+    max-width: 100%;
+  }
+}
 .works__right {
   padding-top: 29px;
 }
@@ -628,6 +673,11 @@ img {
 @media (max-width: 991.98px) {
   .works .congratulations {
     right: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  .works .congratulations {
+    display: none;
   }
 }
 .works .congratulations-content {
@@ -660,6 +710,11 @@ img {
     right: 25%;
   }
 }
+@media (max-width: 767.98px) {
+  .works .icon-img {
+    display: none;
+  }
+}
 
 .payments {
   margin-top: 160px;
@@ -680,6 +735,11 @@ img {
   padding-top: 86px;
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .payments__right .card {
+    max-width: 100%;
+  }
+}
 .payments__send-money {
   position: absolute;
   right: -48px;
@@ -688,6 +748,11 @@ img {
 @media (max-width: 991.98px) {
   .payments__send-money {
     right: 15%;
+  }
+}
+@media (max-width: 991.98px) {
+  .payments__send-money {
+    right: 25%;
   }
 }
 .payments__income {
@@ -699,6 +764,12 @@ img {
 @media (max-width: 991.98px) {
   .payments__income {
     right: 25%;
+  }
+}
+@media (max-width: 767.98px) {
+  .payments__income {
+    bottom: -30%;
+    right: 45%;
   }
 }
 
@@ -719,6 +790,11 @@ img {
 }
 .feature__left {
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .feature__left img {
+    max-width: 100%;
+  }
 }
 .feature__right {
   padding-top: 50px;
@@ -742,6 +818,11 @@ img {
     right: 10%;
   }
 }
+@media (max-width: 767.98px) {
+  .feature .cash {
+    left: 0;
+  }
+}
 .feature .method {
   position: absolute;
   right: 0;
@@ -758,6 +839,11 @@ img {
 @media (max-width: 991.98px) {
   .feature .method {
     right: 10%;
+  }
+}
+@media (max-width: 767.98px) {
+  .feature .method {
+    left: 5%;
   }
 }
 .feature .method-payments {
@@ -785,6 +871,11 @@ img {
   margin: 0 auto;
   text-align: center;
   width: 435px;
+}
+@media (max-width: 767.98px) {
+  .testimonial .testimonial__header {
+    max-width: 100%;
+  }
 }
 .testimonial__title {
   margin-top: 12px;
@@ -853,6 +944,15 @@ img {
     filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
   }
 }
+@media (max-width: 767.98px) {
+  .testimonial__blockquote {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #fff;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+  }
+}
 .testimonial__author {
   margin-top: 76px;
   display: flex;
@@ -881,12 +981,22 @@ img {
 .blog__desc {
   margin-top: 18px;
 }
+@media (max-width: 767.98px) {
+  .blog__desc {
+    display: none;
+  }
+}
 .blog__list {
   margin-top: 70px;
 }
 .blog__btn {
   width: 123px;
   height: 58px;
+}
+@media (max-width: 767.98px) {
+  .blog__btn {
+    display: none;
+  }
 }
 .blog__item {
   display: flex;
@@ -1040,6 +1150,13 @@ img {
   .footer__row {
     display: grid;
     grid-template-columns: 50% 50%;
+    row-gap: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer__row {
+    display: grid;
+    grid-template-columns: 100%;
     row-gap: 50px;
   }
 }

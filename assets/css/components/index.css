@@ -17,6 +17,12 @@
     font-size: 1.4rem;
   }
 }
+@media (max-width: 767.98px) {
+  .btn {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}
 .btn-color1 {
   border: 2px solid #7264d6;
   background: #7264d6;

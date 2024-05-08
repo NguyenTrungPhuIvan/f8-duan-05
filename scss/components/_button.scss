@@ -18,6 +18,11 @@
         width: 120px;
         font-size: 1.4rem;
     }
+    @include ab.responsive("m") {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
     &-color1 {
         border: 2px solid ab.$primary-color;
         background: ab.$primary-color;

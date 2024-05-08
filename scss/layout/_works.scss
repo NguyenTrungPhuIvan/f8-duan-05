@@ -20,6 +20,11 @@
     }
     &__left {
         position: relative;
+        img {
+            @include ab.responsive("m") {
+                max-width: 100%;
+            }
+        }
     }
 
     &__right {
@@ -45,6 +50,9 @@
         @include ab.responsive("tm") {
             right: 10%;
         }
+        @include ab.responsive("m") {
+            display: none;
+        }
         &-content {
             @include ab.flexCenter($a: flex-start);
             row-gap: 5px;
@@ -69,6 +77,9 @@
         top: 76px;
         @include ab.responsive("tm") {
             right: 25%;
+        }
+        @include ab.responsive("m") {
+            display: none;
         }
     }
 }

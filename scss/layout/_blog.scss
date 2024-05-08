@@ -13,6 +13,9 @@
     }
     &__desc {
         margin-top: 18px;
+        @include ab.responsive("m") {
+            display: none;
+        }
     }
     &__list {
         margin-top: 70px;
@@ -20,6 +23,9 @@
     &__btn {
         width: 123px;
         height: 58px;
+        @include ab.responsive("m") {
+            display: none;
+        }
     }
     &__item {
         display: flex;

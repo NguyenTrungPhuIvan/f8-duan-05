@@ -29,6 +29,11 @@
         @include ab.responsive("tm") {
             @include ab.flexCenter();
         }
+        @include ab.responsive("m") {
+            @include ab.flexCenter($a: flex-start);
+            row-gap: 20px;
+            flex-flow: column;
+        }
 
         input {
             width: 540px;
@@ -83,6 +88,9 @@
         @include ab.responsive("tm") {
             left: 0;
         }
+        @include ab.responsive("m") {
+            display: none;
+        }
         font-size: 1.4rem;
         .deposite {
             margin-left: 8px;
@@ -108,11 +116,15 @@
         @include ab.responsive("tm") {
             right: 0;
         }
+        @include ab.responsive("m") {
+            display: none;
+        }
         color: #fff;
         .per {
             font-size: 4.4rem;
             font-weight: 600;
         }
+
         .interest {
             font-size: 1.6rem;
             font-weight: 400;
@@ -134,6 +146,9 @@
         font-style: normal;
         @include ab.responsive("tm") {
             right: 0;
+        }
+        @include ab.responsive("m") {
+            display: none;
         }
         .secured-fund {
             @include ab.flexCenter($a: flex-start);

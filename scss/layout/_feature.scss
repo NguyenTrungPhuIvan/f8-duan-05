@@ -18,6 +18,11 @@
 
     &__left {
         position: relative;
+        img {
+            @include ab.responsive("m") {
+                max-width: 100%;
+            }
+        }
     }
     &__right {
         padding-top: 50px;
@@ -36,6 +41,9 @@
         @include ab.responsive("tm") {
             right: 10%;
         }
+        @include ab.responsive("m") {
+            left: 0;
+        }
     }
     .method {
         position: absolute;
@@ -52,6 +60,9 @@
         font-weight: 600;
         @include ab.responsive("tm") {
             right: 10%;
+        }
+        @include ab.responsive("m") {
+            left: 5%;
         }
     }
     .method-payments {

@@ -59,12 +59,19 @@
         margin-left: auto;
         a {
             @include ab.textStyle(ab.$text-secondary-color, 1.6rem, 600, 1.75);
+            @include ab.responsive("m") {
+                display: none;
+            }
         }
         .btn {
             margin-left: 28px;
             width: 113px;
             height: 52px;
             border-radius: 6px;
+
+            @include ab.responsive("m") {
+                display: none;
+            }
         }
     }
 }

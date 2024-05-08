@@ -18,6 +18,11 @@
     &__right {
         padding-top: 86px;
         position: relative;
+        .card {
+            @include ab.responsive("m") {
+                max-width: 100%;
+            }
+        }
     }
 
     &__send-money {
@@ -27,6 +32,9 @@
         @include ab.responsive("tm") {
             right: 15%;
         }
+        @include ab.responsive("tm") {
+            right: 25%;
+        }
     }
     &__income {
         position: absolute;
@@ -35,6 +43,10 @@
         box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
         @include ab.responsive("tm") {
             right: 25%;
+        }
+        @include ab.responsive("m") {
+            bottom: -30%;
+            right: 45%;
         }
     }
 }
