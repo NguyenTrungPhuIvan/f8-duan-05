@@ -35,6 +35,12 @@
         &:nth-child(2) {
             margin-top: 2px;
         }
+        a {
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
     &__infor {
         &-desc {
@@ -63,6 +69,10 @@
                 border: 1px solid #8e919a;
                 opacity: 0.7;
             }
+            input:focus {
+                color: ab.$text-secondary-color;
+                opacity: 1;
+            }
             button {
                 width: 113px;
                 height: 52px;
@@ -83,6 +93,10 @@
         &-item a {
             color: #6a6e78;
             text-decoration-line: underline;
+            transition: opacity 0.25s;
+            &:hover {
+                opacity: 0.75;
+            }
         }
     }
     &__copy {

@@ -77,6 +77,9 @@
     display: none;
   }
 }
+.header__login:hover {
+  opacity: 0.75;
+}
 
 .hero {
   margin-top: 76px;
@@ -831,6 +834,12 @@
 .footer__item:nth-child(2) {
   margin-top: 2px;
 }
+.footer__item a {
+  transition: opacity 0.25s;
+}
+.footer__item a:hover {
+  opacity: 1;
+}
 .footer__infor-desc {
   opacity: 0.75;
   margin-top: 24px;
@@ -861,6 +870,10 @@
   border: 1px solid #8e919a;
   opacity: 0.7;
 }
+.footer__infor-form input:focus {
+  color: #212832;
+  opacity: 1;
+}
 .footer__infor-form button {
   width: 113px;
   height: 52px;
@@ -879,6 +892,10 @@
 .footer__contact-item a {
   color: #6a6e78;
   text-decoration-line: underline;
+  transition: opacity 0.25s;
+}
+.footer__contact-item a:hover {
+  opacity: 0.75;
 }
 .footer__copy {
   display: flex;
